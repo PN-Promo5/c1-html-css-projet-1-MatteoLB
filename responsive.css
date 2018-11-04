@@ -1,0 +1,413 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container {
+    width: 100%;
+  }
+  /**************************************** BOTTOM MENU FIRST LINE ***************************************/
+  #mainMenu #bottomMenu
+  {
+  	display: none;
+  }
+
+  #bottomMenuResponsive
+  {
+  	display: block;
+  }
+
+  #bottomMenuResponsive img
+  {
+  	height: 60px;
+  }
+
+  #bottomMenuResponsive div
+  {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+
+  #bottomMenuResponsive div p
+  {
+  	padding-right: 10px;
+  }
+
+  #bottomMenuResponsive div input
+  {
+  	display: none;
+  }
+
+  #bottomMenuResponsive div button
+  {
+  	border: none;
+  	background-color: gold;
+  	padding: 7px 28px;
+  	border-radius: 10px;
+  }
+
+  #bottomMenuResponsive div button:nth-child(2)
+  {
+  	background-color: #b9d9e7;
+  	padding: 7px 14px;
+  }
+
+  #bottomMenuResponsive div button i
+  {
+  	font-size: 1.7rem;
+  }
+
+  /**************************************** BOTTOM MENU SECOND LINE ********************************/
+  #bottomMenuResponsive ul
+  {
+  	display: flex;
+  	justify-content: space-around;
+  	border-top: 2px solid #2572a8;
+  	color: white;
+  	font-size: 1.3rem;
+  }
+
+  #bottomMenuResponsive ul li
+  {
+  	padding: 2px 0px;
+  }
+
+  #bottomMenuResponsive ul li:nth-child(1)::after, #bottomMenuResponsive ul li:nth-child(2)::after
+  {
+  	content: "|";
+  	position: relative;
+  	left: 15px;
+  	color: #2572a8;
+  }
+
+
+  /**************************************** HEADER *************************************/
+  #mainHeader #headerContent h1
+  {
+  	font-size: 2.5rem;
+  }
+  #mainHeader #headerContent p
+  {
+  	font-size: 1.5rem;
+  	margin-bottom: 20px;
+  }
+
+  #headerCallToAction
+  {
+  	animation: none;
+  }
+
+  #mainHeader .headerSkew
+  {
+  	box-shadow: -3px 11px 0px white, 0px -2px 12px #5d6b35;
+  }
+
+  #mainHeader .headerSkew h2
+  {
+  	font-size: 2.3rem;
+  }
+
+
+  /**************************************** CONCEPT ************************************/
+  .concept
+  {
+  	padding: 90px 0px 0px 0px
+  }
+
+  .concept .container
+  {
+  	flex-direction: column;
+  	padding: 0px;
+  }
+
+  .concept p
+  {
+  	font-size: 1.2rem;
+  	text-align: center;
+  	padding: 0px 10px;
+  }
+
+
+
+  /**************************************** ADVANTAGES **********************************/
+  .advantages
+  {
+  	background-color: #338fb8;
+  	background-position: bottom;
+	text-align: center;
+	padding: 130px 0px 40px 0px;
+	font-size: 1.2rem;
+  }
+
+  .advantages .container
+  {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	padding: 0;
+  	grid-gap: 0;
+  }
+
+  .advantages h2
+  {
+	font-size: 2.4rem;
+	margin-bottom: 30px;
+  }
+  .advantages .advantage1
+  {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border-top-left-radius: 120px;
+	border-bottom-left-radius: 120px;
+  }
+  .advantages .advantage2
+  {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border-top-right-radius: 120px;
+	border-bottom-right-radius: 120px;
+  }
+  .advantages .advantage3
+  {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border-top-left-radius: 120px;
+	border-bottom-left-radius: 120px;
+  }
+  .advantages .advantage4
+  {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border-top-right-radius: 120px;
+	border-bottom-right-radius: 120px;
+  }
+
+  .advantages article:hover
+  {
+	filter: none;
+	transform: none;
+	box-shadow: none;
+  }
+
+  .advantages article
+  {
+	text-align: center;
+	padding: 30px 30px 30px 30px;
+	box-shadow: none;
+	overflow: hidden;
+	border-radius: 20px;
+	background-color: #b9d9e7;
+	border-radius: 0;
+  }
+
+
+
+/******************************************** PROMOTION **************************************/
+.promotion .container
+{
+	flex-direction: column;
+	text-align: center;
+}
+
+.promotion p
+{
+	margin: 10px 0px 20px 0px;
+}
+
+
+/********************************************* PRODUITS **********************************************/
+.productsRow
+{
+	flex-direction: column;
+}
+
+.productsTitle
+{
+	font-size: 2rem;
+}
+
+.productsRow article
+{
+	margin: 30px 30px 0px 30px;
+}
+
+.productsRow article:hover
+{
+	transform: none;
+}
+
+
+/********************************************* FOOTER FORM *******************************************/
+.footerForm p
+{
+	flex-direction: column;
+}
+
+.footerForm #formName, .footerForm #formMail, .footerForm #formComment
+{
+	width: 90%;
+	margin-right: 0%;
+	margin-bottom: 10px;
+
+}
+/************************************** FOOTER CONTENT, PAYMENT, & LEGAL MENTIONS *******************/
+.footerContent
+{
+	flex-direction: column;
+}
+
+.paymentMethod ul, .legalMentions ul
+{
+	flex-wrap: wrap;
+}
+.paymentMethod ul li:first-child
+{
+	width: 100%;
+	text-align: center;
+}
+.paymentMethod ul li
+{
+	padding: 5px;
+}
+
+.legalMentions ul li
+{
+	padding: 5px;
+}
+
+
+/*********************************************** ANCRE FIXE ******************************************/
+#toTheTop
+{
+	bottom: 20px;
+	right: 10px;
+	width: 45px;
+	height: 45px;
+}
+#toTheTop i
+{
+	position: relative;
+	bottom: 12px;
+}
+
+
+
+}
+
+/**********************************************************************************************************************************************************************/
+/**********************************************************************************************************************************************************************/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+  .container {
+    width: 99%;
+  }
+
+  /**************************************** BOTTOM MENU FIRST LINE ***************************************/
+  #mainMenu #bottomMenu
+  {
+  	display: none;
+  }
+  #bottomMenuResponsive
+  {
+  	display: block;
+  }
+  #bottomMenuResponsive img
+  {
+  	height: 60px;
+  }
+  #bottomMenuResponsive div
+  {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  #bottomMenuResponsive div p
+  {
+  	padding-right: 10px;
+  }
+  #bottomMenuResponsive div input
+  {
+  	display: inline-block;  	
+	border: none;
+	border-bottom: 2px solid #cae1eb; /* #b9d9e7; #17374a;*/	
+	background-color: inherit;
+	font-size: 1.3rem;
+	padding-left: 5px;
+  }
+  #bottomMenuResponsive div input::placeholder
+  {
+  	color: #b9d9e7;
+  }
+  #bottomMenuResponsive div button
+  {
+  	border: none;
+  	background-color: gold;
+  	padding: 7px 28px;
+  	border-radius: 10px;
+  }
+  #bottomMenuResponsive div button:nth-child(2)
+  {
+  	background-color: #b9d9e7;
+  	padding: 7px 14px;
+  }
+  #bottomMenuResponsive div button i
+  {
+  	font-size: 1.7rem;
+  }
+
+  /**************************************** BOTTOM MENU SECOND LINE ********************************/
+  #bottomMenuResponsive ul
+  {
+  	display: flex;
+  	justify-content: space-around;
+  	border-top: 2px solid #2572a8;
+  	color: white;
+  	font-size: 1.3rem;
+  }
+
+  #bottomMenuResponsive ul li
+  {
+  	padding: 2px 0px;
+  }
+
+  #bottomMenuResponsive ul li:nth-child(1)::after, #bottomMenuResponsive ul li:nth-child(2)::after
+  {
+  	content: "|";
+  	position: relative;
+  	left: 75px;
+  	color: #2572a8;
+  }
+
+
+  /************************************************* AVANTAGES *****************************************/
+
+  .advantages .container
+  {
+  	grid-gap: 20px 10px;
+  }
+
+  .advantagesTriangle
+  {
+  	top: -1px;
+  }
+
+
+  /************************************************** PRODUITS ******************************************/
+  .productsRow article
+  {
+  	margin: 30px 10px;
+  }
+  p.addProduct
+  {
+  	display: flex;
+  	flex-direction: column;
+  }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+  .container {
+    width: 100%;
+  }
+}
